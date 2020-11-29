@@ -1,2 +1,3 @@
 customer/build
 customer/.gradle
+customer/docker/*.jar
