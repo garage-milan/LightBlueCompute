@@ -8,7 +8,7 @@ export JAVA_OPTS="-Djava.security.egd=file:/dev/./urandom"
 if [ -d  /var/run/secrets/binding-refarch-cloudantdb ] 
 then
   cloudant_username=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.username' | sed -e 's/"//g'`
-  cloudant_password=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.apikey' | sed -e 's/"//g'`
+  cloudant_password=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.password' | sed -e 's/"//g'`
   cloudant_host=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.host' | sed -e 's/"//g'`
   cloudant_port=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.port' | sed -e 's/"//g'`
   cloudant_proto=`cat /var/run/secrets/binding-refarch-cloudantdb/binding | jq '.url' | sed -e 's/"//g' | sed -e 's|://.*||'`
