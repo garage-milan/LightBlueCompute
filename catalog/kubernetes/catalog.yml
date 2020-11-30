@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: catalog
-          image: "us.icr.io/<namespace>/catalog:latest"
+          image: "de.icr.io/<namespace>/catalog:1"
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:

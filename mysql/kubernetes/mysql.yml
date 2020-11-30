@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: mysql
-          image: "registry.ng.bluemix.net/<namespace>/mysql"
+          image: "de.icr.io/<namespace>/mysql:1"
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:
