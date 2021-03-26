@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: webapp
-          image: "de.icr.io/<namespace>/webapp:latest"
+          image: "<region>.icr.io/<namespace>/webapp_<YOUR_INITIALS>:latest"
           imagePullPolicy: Always
           livenessProbe:
             tcpSocket:
@@ -37,4 +37,3 @@ spec:
   ports:
    - protocol: TCP
      port: 8000
-     nodePort: 30120
